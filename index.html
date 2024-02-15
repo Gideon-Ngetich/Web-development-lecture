@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            justify-content: center;
+            align-items: start;
+        }
+
+        .name,
+        .password,
+        .subjects {
+            display: flex;
+            /* flex-direction: column; */
+            gap: 10px;
+        }
+
+        label {
+            font-weight: bold;
+            padding: 15px;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" class="form">
+        <div class="name">
+            <label for="">Name</label>
+            <input type="text" name="Name" id="" placeholder="Name">
+        </div>
+
+
+        <br>
+        <div class="password">
+            <label for="">Password</label>
+            <input type="password" name="Password" id="" placeholder="Password">
+        </div>
+
+
+        <br>
+
+        <div class="subjects">
+            <!-- <label for="">Subject</label> -->
+            <br>
+            <fieldset>
+                <legend>Subject</legend>
+                <input type="checkbox" value='Web' id="web">
+                <label for="web">Web</label>
+
+                <input type="checkbox" value='c++' id="mobile">
+                <label for="mobile">C++</label>
+
+                <input type="checkbox" value='java' id="java">
+                <label for="java">Java</label>
+            </fieldset>
+
+        </div>
+
+
+        <br>
+        <div class="gender">
+            <!-- <label for="">Gender</label> -->
+            <br>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <input type="radio" name="gender">
+                <label for="Male">Male</label>
+
+                <input type="radio" name="gender">
+                <label for="female">Female</label>
+
+                <input type="radio" name="gender">
+                <label for="female">Other</label>
+            </fieldset>
+
+        </div>
+
+
+
+        <br>
+        <div class="status">
+
+            <fieldset>
+                <legend>Status</legend>
+                <select name="status" id="">
+                    <option value="Single">Single</option>
+                    <option value="Married">Married</option>
+                    <option value="Divorced">Divorced</option>
+                </select>
+            </fieldset>
+            
+        </div>
+
+
+        <br>
+        <div class="comments">
+            <label for="">Comments</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Type something here....."></textarea>
+
+        </div>
+
+        <div>
+            <button type="submit">Submit</button>
+            <fieldset></fieldset>
+        </div>
+    </form>
+</body>
+
+</html>
