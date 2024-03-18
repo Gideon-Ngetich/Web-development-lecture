@@ -1,0 +1,12 @@
+table{
+    background-color: #7a7ae4;
+    border: none;
+}
+tr{
+    border: none;
+}
+th,td{
+    padding: 10px;
+    /* border: 1px solid black; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
